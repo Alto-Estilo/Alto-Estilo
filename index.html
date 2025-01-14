@@ -3,37 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu de Roupas</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Alto Estilo - Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #404040;
+            color: white;
+        }
+
+        .menu {
+            width: 250px;
+            background-color: #606060;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            height: 100%;
+        }
+
+        .menu h2 {
+            margin: 0;
+            padding: 10px;
+            background-color: #505050;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .menu ul li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+            background-color: #505050;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .menu ul li a:hover {
+            background-color: #707070;
+        }
+
+        .submenu {
+            display: none;
+            margin-left: 20px;
+        }
+
+        .menu ul li:hover .submenu {
+            display: block;
+        }
+
+        .submenu li {
+            margin: 5px 0;
+        }
+
+        .submenu li a {
+            background-color: #707070;
+            padding: 8px;
+        }
+
+        .submenu li a:hover {
+            background-color: #909090;
+        }
+
+        .logo {
+            text-align: center;
+            margin-left: 250px;
+            padding: 20px;
+            background-color: #000;
+        }
+
+        .logo img {
+            max-width: 200px;
+        }
+
+        .slogan {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="menu">
+    <div class="menu">
+        <h2>Roupas</h2>
         <ul>
-            <li class="menu-item">
-                <a href="#">Roupas</a>
-                <ul class="submenu">
-                    <li><a href="#camisas">Camisas</a></li>
-                    <li><a href="#calcas">Calças</a></li>
-                    <li><a href="#vestidos">Vestidos</a></li>
-                </ul>
+            <li>
+                <a href="#">Camisas</a>
+            </li>
+            <li>
+                <a href="#">Bonés</a>
+            </li>
+            <li>
+                <a href="#">Calças</a>
             </li>
         </ul>
-    </nav>
 
-    <main>
-        <section id="camisas">
-            <h1>Camisas</h1>
-            <p>Veja nossas opções de camisas.</p>
-        </section>
-        <section id="calcas">
-            <h1>Calças</h1>
-            <p>Confira nossa coleção de calças.</p>
-        </section>
-        <section id="vestidos">
-            <h1>Vestidos</h1>
-            <p>Explore nossos vestidos incríveis.</p>
-        </section>
-    </main>
+        <h2>Informações</h2>
+        <ul>
+            <li>
+                <a href="#">Sobre Nós</a>
+            </li>
+            <li>
+                <a href="#">Contato</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="logo">
+        <img src="https://via.placeholder.com/200x100?text=Alto+Estilo" alt="Logo Alto Estilo">
+    </div>
+
+    <div class="slogan">Vestindo Você Com Alto Estilo</div>
 </body>
 </html>
-
