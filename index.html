@@ -3,65 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alto Estilo - Loja de Roupas</title>
+    <title>Menu de Roupas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Alto Estilo</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="menu">
+        <ul>
+            <li class="menu-item">
+                <a href="#">Roupas</a>
+                <ul class="submenu">
+                    <li><a href="#camisas">Camisas</a></li>
+                    <li><a href="#calcas">Calças</a></li>
+                    <li><a href="#vestidos">Vestidos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-    <section id="home" class="banner">
-        <h2>Bem-vindo à Alto Estilo!</h2>
-        <p>Onde seu estilo ganha vida!</p>
-    </section>
-
-    <section id="produtos" class="produtos">
-        <h2>Produtos em Destaque</h2>
-        <div class="produto">
-            <img src="imagens/camiseta.jpg" alt="Camiseta básica">
-            <h3>Camiseta Básica</h3>
-            <p>R$ 49,90</p>
-        </div>
-        <div class="produto">
-            <img src="imagens/calca.jpg" alt="Calça jeans">
-            <h3>Calça Jeans</h3>
-            <p>R$ 129,90</p>
-        </div>
-        <div class="produto">
-            <img src="imagens/vestido.jpg" alt="Vestido floral">
-            <h3>Vestido Floral</h3>
-            <p>R$ 89,90</p>
-        </div>
-    </section>
-
-    <section id="sobre" class="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Somos uma loja focada em oferecer as melhores roupas e acessórios para destacar seu estilo único. 
-           Com anos de experiência no mercado, temos orgulho em transformar tendências em realidade.</p>
-    </section>
-
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        <p>Email: contato@altoestilo.com</p>
-        <p>Telefone: (11) 98765-4321</p>
-        <div class="redes-sociais">
-            <a href="#">Instagram</a> | <a href="#">Facebook</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Alto Estilo. Todos os direitos reservados.</p>
-    </footer>
+    <main>
+        <section id="camisas">
+            <h1>Camisas</h1>
+            <p>Veja nossas opções de camisas.</p>
+        </section>
+        <section id="calcas">
+            <h1>Calças</h1>
+            <p>Confira nossa coleção de calças.</p>
+        </section>
+        <section id="vestidos">
+            <h1>Vestidos</h1>
+            <p>Explore nossos vestidos incríveis.</p>
+        </section>
+    </main>
 </body>
 </html>
+
