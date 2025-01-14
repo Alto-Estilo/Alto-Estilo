@@ -1,88 +1,47 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #404040;
-    color: white;
-}
-
-.menu {
-    width: 250px;
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
     background-color: #606060;
-    padding: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    height: 100%;
-}
-
-.menu h2 {
-    margin: 0;
-    padding: 10px;
-    background-color: #505050;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.menu ul li {
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.menu ul li a {
-    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     color: white;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container label {
     display: block;
+    margin: 10px 0 5px;
+}
+
+.form-container input {
+    width: 100%;
     padding: 10px;
-    background-color: #505050;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container .button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.menu ul li a:hover {
-    background-color: #707070;
-}
-
-.submenu {
-    display: none;
-    margin-left: 20px;
-}
-
-.menu ul li:hover .submenu {
-    display: block;
-}
-
-.submenu li {
-    margin: 5px 0;
-}
-
-.submenu li a {
-    background-color: #707070;
-    padding: 8px;
-}
-
-.submenu li a:hover {
-    background-color: #909090;
-}
-
-.logo {
-    text-align: center;
-    margin-left: 250px;
-    padding: 20px;
-    background-color: #000;
-}
-
-.logo img {
-    max-width: 200px;
-}
-
-.slogan {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.5em;
-    margin-top: 20px;
+.form-container .button:hover {
+    background-color: white;
+    color: black;
 }
